@@ -29,7 +29,7 @@ const Home=() =>{
             </div>
             <div>
                 <h1>Emily Cooks</h1>
-                <p>image here</p>
+                <img src="https://all-youcan-eat.com/wp-content/uploads/2020/08/board-amidst-cooking-ingredients_23-2147749529.jpg"/>
             </div>
         </div>
     )

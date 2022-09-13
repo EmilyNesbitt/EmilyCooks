@@ -37,7 +37,7 @@ const Form=()=>{
     }
 
     return(
-        <div>
+        <div class="container">
             <button onClick={()=>navigate('/')}>Home</button>
             <form onSubmit={onSubmitHandler}>
                 <h1>Add New Recipe</h1>
@@ -70,16 +70,16 @@ const Form=()=>{
                 <p>Select Category</p>
                 <p>
                     <label>Appetizer</label>
-                    <input className='form-control' type='radio' value = 'Appetizer' onChange = {(e)=>setType(e.target.value)}/>
+                    <input className='radio' type='radio' value = 'Appetizer' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {errors.type && <span>{errors.type.message}</span>}
                     <label>Entree</label>
-                    <input className='form-control' type='radio' value = 'Entree' onChange = {(e)=>setType(e.target.value)}/>
+                    <input className='radio' type='radio' value = 'Entree' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {errors.type && <span>{errors.type.message}</span>}
                     <label>Dessert</label>
-                    <input className='form-control' type='radio' value = 'Dessert' onChange = {(e)=>setType(e.target.value)}/>
+                    <input className='radio' type='radio' value = 'Dessert' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {errors.type && <span>{errors.type.message}</span>}
                     <label>Drink</label>
-                    <input className='form-control' type='radio' value = 'Drink' onChange = {(e)=>setType(e.target.value)}/>
+                    <input className='radio' type='radio' value = 'Drink' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {errors.type && <span>{errors.type.message}</span>}
                 </p>
                 <button type='submit'>Add Recipe</button>
