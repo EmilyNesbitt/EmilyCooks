@@ -26,7 +26,7 @@ const List=(props)=>{
 
     return(
         <div>
-            <div>
+            <div className="container">
             {recipes?.map((recipe, index) =>(
                 <Link key = {index} to={`/ShowOne/${recipe._id}`}>{recipe.name}</Link>
             ))}

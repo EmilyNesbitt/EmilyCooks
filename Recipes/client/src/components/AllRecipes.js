@@ -24,14 +24,14 @@ const AllRecipes=(props)=>{
 
     return(
         <div>
-             <div>
+             <div className="container">
              {recipes?.map((recipe, index) =>( 
              <div key={index}>
                 <Link to={`/showOne/${recipe._id}`}>{recipe.name}</Link> <br/>
             </div>
             ))}
             </div>
-            <div>
+            <div className="navbar fixed-bottom">
                 <Link to={`/list/Appetizer`}>Appetizers</Link>
                 <Link to={`/list/Entree`}>Entrees</Link>
                 <Link to={`/list/Dessert`}>Desserts</Link>

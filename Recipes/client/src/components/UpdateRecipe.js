@@ -88,16 +88,16 @@ const UpdateRecipe=()=>{
                 <p>Select Category</p>
                 <p>
                     <label>Appetizer</label>
-                    <input className='form-control' type='radio' value = 'Appetizer' onChange = {(e)=>setType(e.target.value)}/>
+                    <input type='radio' value = 'Appetizer' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {/* {errors.type && <span>{errors.type.message}</span>} */}
                     <label>Entree</label>
-                    <input className='form-control' type='radio' value = 'Entree' onChange = {(e)=>setType(e.target.value)}/>
+                    <input  type='radio' value = 'Entree' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {/* {errors.type && <span>{errors.type.message}</span>} */}
                     <label>Dessert</label>
-                    <input className='form-control' type='radio' value = 'Dessert' onChange = {(e)=>setType(e.target.value)}/>
+                    <input type='radio' value = 'Dessert' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {/* {errors.type && <span>{errors.type.message}</span>} */}
                     <label>Drink</label>
-                    <input className='form-control' type='radio' value = 'Drink' onChange = {(e)=>setType(e.target.value)}/>
+                    <input  type='radio' value = 'Drink' onChange = {(e)=>setType(e.target.value)}/><br/>
                     {/* {errors.type && <span>{errors.type.message}</span>} */}
                 </p>
                 <button type='submit'>Update Recipe</button>
